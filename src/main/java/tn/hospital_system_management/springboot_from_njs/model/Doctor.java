@@ -12,7 +12,7 @@ public class Doctor {
     private int doctorRegistrationNumber;
     private Name name;
     private String gender;
-    private Date dob; // Date Of birth
+    private String dob; // Date Of birth
     private String address;
     private String city;
     private String district;

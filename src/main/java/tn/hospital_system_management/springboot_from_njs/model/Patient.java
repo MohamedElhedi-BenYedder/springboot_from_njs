@@ -11,8 +11,9 @@ import java.util.Date;
 @Data
 @Document("Patient")
 public class Patient {
-    public int PatientRegistrationNumber;
+    public int patientRegistrationNumber;
     public Name name;
+    public String getFullName() { return name.FullName(); }
     public String gender;
     public String dob; // Date Of birth
     public String address;
