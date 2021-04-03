@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import tn.hospital_system_management.springboot_from_njs.model.Doctor;
 import tn.hospital_system_management.springboot_from_njs.service.DoctorServiceImpl;
+import tn.hospital_system_management.springboot_from_njs.util.Name;
+
 import javax.validation.Valid;
 import java.util.List;
 

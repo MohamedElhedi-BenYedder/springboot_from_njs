@@ -5,9 +5,11 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Component;
 import tn.hospital_system_management.springboot_from_njs.Repository.DoctorRepository;
 import tn.hospital_system_management.springboot_from_njs.model.Doctor;
+import tn.hospital_system_management.springboot_from_njs.util.Name;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Component
 public class DoctorServiceImpl implements DoctorService{

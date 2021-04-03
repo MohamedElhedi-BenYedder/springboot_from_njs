@@ -1,6 +1,7 @@
 package tn.hospital_system_management.springboot_from_njs.service;
 
 import tn.hospital_system_management.springboot_from_njs.model.Doctor;
+import tn.hospital_system_management.springboot_from_njs.util.Name;
 
 
 import java.util.List;
@@ -10,6 +11,7 @@ public interface DoctorService {
     public int newRegNumber() ;
     public Doctor getDoctorByRegNumber(int regNumber);
     public List<Doctor> getAll();
+
     public int count();
 
 }
