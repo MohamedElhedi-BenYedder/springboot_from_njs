@@ -9,6 +9,7 @@ import java.util.List;
 public interface AppointmentService {
     public List<Appointment> getAll();
     public Appointment create(Appointment appointment);
+    public Appointment update(Appointment appointment);
     public int newRegNumber();
-    public List<Appointment> getByDoctorAtDate(int doctorRegistrationNumber , Date date);
+    public List<Appointment> getByDoctorAtDate(int doctorRegistrationNumber , String date);
 }

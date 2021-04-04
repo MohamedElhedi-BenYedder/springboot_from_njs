@@ -7,5 +7,5 @@ import java.util.Date;
 import java.util.List;
 
 public interface AppointmentRepository extends MongoRepository<Appointment, String> {
-    List<Appointment> findByDoctorRegistrationNumberAndAppointmentDate(int doctorRegistrationNumber, Date appointmentDate);
+    List<Appointment> findByDoctorRegistrationNumberAndAppointmentDate(int doctorRegistrationNumber, String appointmentDate);
 }

@@ -2,6 +2,7 @@ package tn.hospital_system_management.springboot_from_njs.service;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Component;
 import tn.hospital_system_management.springboot_from_njs.Repository.RoomRepository;
 import tn.hospital_system_management.springboot_from_njs.model.Room;
@@ -26,5 +27,10 @@ public class RoomServiceImpl implements RoomService{
     @Override
     public int count() {
         return roomRepository.findAll().size();
+    }
+
+    @Override
+    public int newNumber() {
+        return roomRepository.findAll(Sort.by(Sort.Direction.DESC,"roomNumber")).get(0).getRoomNumber()+1;
     }
 }

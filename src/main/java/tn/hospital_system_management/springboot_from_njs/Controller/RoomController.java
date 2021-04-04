@@ -15,7 +15,7 @@ import java.util.List;
 public class RoomController {
     @Autowired
     private RoomServiceImpl roomService;
-    @PostMapping()
+    @PostMapping("/create")
     public Room create(@RequestBody @Valid Room room)
     {
         return roomService.create(room);
@@ -28,6 +28,11 @@ public class RoomController {
     @GetMapping("/getAll")
     public List<Room> getAll(){
         return roomService.getAll();
+    }
+    @GetMapping("/getNewNumber")
+    public int NewNumber()
+    {
+        return roomService.newNumber();
     }
 
 }

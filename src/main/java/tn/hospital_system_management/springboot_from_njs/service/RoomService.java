@@ -6,6 +6,7 @@ import java.util.List;
 
 public interface RoomService {
     public Room create(Room room);
+    public int newNumber();
     public List<Room> getAll();
     public int count();
 }

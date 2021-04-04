@@ -33,7 +33,12 @@ public class AppointmentServiceImpl implements AppointmentService{
     }
 
     @Override
-    public List<Appointment> getByDoctorAtDate(int doctorRegistrationNumber, Date appointmentDate) {
+    public List<Appointment> getByDoctorAtDate(int doctorRegistrationNumber, String appointmentDate) {
         return appointmentRepository.findByDoctorRegistrationNumberAndAppointmentDate(doctorRegistrationNumber,appointmentDate);
+    }
+
+    @Override
+    public Appointment update(Appointment appointment) {
+        return null;
     }
 }
